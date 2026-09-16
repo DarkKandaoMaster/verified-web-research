@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-09-16T18:04:11+00:00",
+  "summary": {
+    "OK": 2
+  },
+  "results": [
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "[1706.03762] Attention Is All You Need",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:08+00:00",
+      "elapsed_s": 2.83,
+      "text_chars_sampled": 4913
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.03762v1",
+      "final_url": "https://arxiv.org/abs/1706.03762v1",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "[1706.03762v1] Attention Is All You Need",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:08+00:00",
+      "elapsed_s": 2.86,
+      "text_chars_sampled": 4917
+    }
+  ]
+}

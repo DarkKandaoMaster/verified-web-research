@@ -1,0 +1,34 @@
+{
+  "id": "S01",
+  "url": "https://www.python.org/downloads/release/python-3130/",
+  "final_url": "https://www.python.org/downloads/release/python-3130/",
+  "fetched_at": "2026-09-16T18:04:20+00:00",
+  "method": "http",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "Python Release Python 3.13.0 | Python.org",
+  "published": null,
+  "published_from": null,
+  "canonical": null,
+  "lang": "en",
+  "error": null,
+  "description": "The official home of the Python Programming Language",
+  "links_in_content": 74,
+  "text_chars": 4747,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 4747,
+  "find": {
+    "Release Date: Oct. 7, 2024": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    }
+  },
+  "page_file": "web-evidence\\pages\\S01.md"
+}

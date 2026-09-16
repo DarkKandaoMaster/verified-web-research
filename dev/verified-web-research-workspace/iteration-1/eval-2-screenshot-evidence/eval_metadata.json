@@ -1,0 +1,22 @@
+{
+  "eval_id": 2,
+  "eval_name": "research-with-screenshot-evidence",
+  "prompt": "arXiv 上 'Attention Is All You Need' 这篇论文的摘要里，WMT 2014 英德和英法翻译任务的 BLEU 分别报告为多少？我要截图证据，把截图存到当前目录下。",
+  "assertions": [
+    {
+      "text": "答案给出英德 28.4 BLEU 和英法 41.8 BLEU"
+    },
+    {
+      "text": "输出目录下存在至少一个 PNG 截图文件"
+    },
+    {
+      "text": "截图能清晰读到摘要中包含 28.4 和 41.8 的那句话（打开图片查看，字迹可辨认）"
+    },
+    {
+      "text": "答案中写明了截图文件的路径/文件名和抓取时间"
+    },
+    {
+      "text": "答案给出 https://arxiv.org/abs/1706.03762（或等价 arXiv 链接）且该链接可打开"
+    }
+  ]
+}

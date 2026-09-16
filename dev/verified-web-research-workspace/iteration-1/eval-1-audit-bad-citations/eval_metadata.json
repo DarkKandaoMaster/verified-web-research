@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "audit-existing-answer-with-bad-citations",
+  "prompt": "这是我让另一个 AI 写的一段关于 Python 3.13 的介绍（文件 python313_answer.md），里面带了 6 个引用链接。帮我检查一下这些网址能不能打开、引用的内容是不是真的支持它说的话，哪些说法有问题，给我一份检查报告。",
+  "assertions": [
+    {
+      "text": "指出链接 [5] (docs.python.org/3/whatsnew/3.13/repl-improvements.html) 无法打开/不存在"
+    },
+    {
+      "text": "指出链接 [6] (docs.python.org/3/library/asyncio-uvloop.html) 无法打开/不存在"
+    },
+    {
+      "text": "判定'JIT 使大多数工作负载提速 2–3 倍'不被 PEP 744 支持"
+    },
+    {
+      "text": "判定'asyncio 默认事件循环改为 uvloop'为不实/无依据"
+    },
+    {
+      "text": "确认 [1]–[4] 可打开，且发布日期、自由线程、移除 19 个模块这三条说法得到来源支持"
+    },
+    {
+      "text": "对'新 REPL 源自 PyPy'一条区分了'说法本身基本属实'与'所附链接不存在'，并给出可替代的正确来源"
+    },
+    {
+      "text": "报告给出了具体修正建议（改写句子/替换链接/删除），而不只是列问题"
+    }
+  ]
+}

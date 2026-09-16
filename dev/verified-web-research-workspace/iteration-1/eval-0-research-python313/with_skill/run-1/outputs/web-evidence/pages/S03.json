@@ -1,0 +1,42 @@
+{
+  "id": "S03",
+  "url": "https://docs.python.org/3/whatsnew/3.13.html",
+  "final_url": "https://docs.python.org/3/whatsnew/3.13.html",
+  "fetched_at": "2026-09-16T18:04:23+00:00",
+  "method": "http",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "What’s New In Python 3.13 — Python 3.14.7 documentation",
+  "published": null,
+  "published_from": null,
+  "canonical": "https://docs.python.org/3/whatsnew/3.13.html",
+  "lang": "en",
+  "error": null,
+  "description": "Editors, Adam Turner and Thomas Wouters,. This article explains the new features in Python 3.13, compared to 3.12. Python 3.13 was released on October 7, 2024. For full details, see the changelog. ...",
+  "links_in_content": 1598,
+  "text_chars": 113695,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 113695,
+  "find": {
+    "PEP 594 proposed removing 19 modules from the standard library": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    },
+    "Released: October 7, 2024": {
+      "found": false,
+      "match_ratio": 0.0,
+      "missing": [
+        "Released: October 7, 2024"
+      ],
+      "note": "partial match; the parts under 'missing' were NOT found on the page"
+    }
+  },
+  "page_file": "web-evidence\\pages\\S03.md"
+}

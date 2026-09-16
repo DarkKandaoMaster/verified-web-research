@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-09-16T18:03:35+00:00",
+  "summary": {
+    "OK": 4,
+    "GONE": 2
+  },
+  "results": [
+    {
+      "url": "https://www.python.org/downloads/release/python-3130/",
+      "final_url": "https://www.python.org/downloads/release/python-3130/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "Python Release Python 3.13.0 | Python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:03:30+00:00",
+      "elapsed_s": 3.31,
+      "text_chars_sampled": 6634
+    },
+    {
+      "url": "https://docs.python.org/3/whatsnew/3.13.html",
+      "final_url": "https://docs.python.org/3/whatsnew/3.13.html",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "What’s New In Python 3.13 — Python 3.14.7 documentation",
+      "notes": [],
+      "checked_at": "2026-09-16T18:03:30+00:00",
+      "elapsed_s": 3.53,
+      "text_chars_sampled": 115545
+    },
+    {
+      "url": "https://peps.python.org/pep-0744/",
+      "final_url": "https://peps.python.org/pep-0744/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "PEP 744 – JIT Compilation | peps.python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:03:30+00:00",
+      "elapsed_s": 3.35,
+      "text_chars_sampled": 26414
+    },
+    {
+      "url": "https://peps.python.org/pep-0594/",
+      "final_url": "https://peps.python.org/pep-0594/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "PEP 594 – Removing dead batteries from the standard library | peps.python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:03:30+00:00",
+      "elapsed_s": 3.37,
+      "text_chars_sampled": 23849
+    },
+    {
+      "url": "https://docs.python.org/3/whatsnew/3.13/repl-improvements.html",
+      "final_url": "https://docs.python.org/3/whatsnew/3.13/repl-improvements.html",
+      "status": "GONE",
+      "http_status": 404,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": null,
+      "notes": [
+        "HTTP 404"
+      ],
+      "checked_at": "2026-09-16T18:03:30+00:00",
+      "elapsed_s": 4.67,
+      "wayback": null
+    },
+    {
+      "url": "https://docs.python.org/3/library/asyncio-uvloop.html",
+      "final_url": "https://docs.python.org/3/library/asyncio-uvloop.html",
+      "status": "GONE",
+      "http_status": 404,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": null,
+      "notes": [
+        "HTTP 404"
+      ],
+      "checked_at": "2026-09-16T18:03:30+00:00",
+      "elapsed_s": 4.93,
+      "wayback": null
+    }
+  ]
+}

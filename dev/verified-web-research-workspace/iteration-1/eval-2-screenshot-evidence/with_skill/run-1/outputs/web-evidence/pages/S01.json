@@ -1,0 +1,40 @@
+{
+  "id": "S01",
+  "url": "https://arxiv.org/abs/1706.03762",
+  "final_url": "https://arxiv.org/abs/1706.03762",
+  "fetched_at": "2026-09-16T18:04:18+00:00",
+  "method": "http",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "[1706.03762] Attention Is All You Need",
+  "published": "2017/06/12",
+  "published_from": "citation_date",
+  "canonical": "https://arxiv.org/abs/1706.03762",
+  "lang": "en",
+  "error": null,
+  "description": "Abstract page for arXiv paper 1706.03762: Attention Is All You Need",
+  "links_in_content": 73,
+  "text_chars": 4601,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 4601,
+  "find": {
+    "Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    },
+    "establishes a new single-model state-of-the-art BLEU score of 41.8": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    }
+  },
+  "page_file": "D:/Release/想法/搜索skill/verified-web-research-workspace/iteration-1/eval-2-screenshot-evidence/with_skill/outputs/web-evidence\\pages\\S01.md"
+}

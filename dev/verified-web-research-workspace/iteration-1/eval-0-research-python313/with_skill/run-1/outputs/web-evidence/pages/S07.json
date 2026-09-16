@@ -1,0 +1,34 @@
+{
+  "id": "S07",
+  "url": "https://peps.python.org/pep-0719/",
+  "final_url": "https://peps.python.org/pep-0719/",
+  "fetched_at": "2026-09-16T18:04:30+00:00",
+  "method": "http",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "PEP 719 – Python 3.13 Release Schedule | peps.python.orgFollowing system colour schemeSelected dark colour schemeSelected light colour scheme",
+  "published": null,
+  "published_from": null,
+  "canonical": "https://peps.python.org/pep-0719/",
+  "lang": "en",
+  "error": null,
+  "description": "This document describes the development and release schedule for Python 3.13.",
+  "links_in_content": 18,
+  "text_chars": 2699,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 2699,
+  "find": {
+    "3.13.0 final: Monday, 2024-10-07": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    }
+  },
+  "page_file": "web-evidence\\pages\\S07.md"
+}

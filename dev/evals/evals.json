@@ -1,0 +1,52 @@
+{
+  "skill_name": "verified-web-research",
+  "evals": [
+    {
+      "id": 0,
+      "name": "research-python313-removed-modules",
+      "prompt": "帮我查一下：Python 3.13 是哪天正式发布的？它按 PEP 594 移除了哪些标准库模块（要完整列表）？请给出带来源的回答，我要能自己点开核对。",
+      "expected_output": "带来源编号的结构化回答：发布日期 2024-10-07（来自 python.org 官方发布页或 What's New），PEP 594 的 19 个模块完整列表（aifc, audioop, cgi, cgitb, chunk, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib），所有 URL 真实可打开，并注明来源发布/访问时间与可信度依据。",
+      "files": [],
+      "assertions": [
+        "答案给出的正式发布日期是 2024 年 10 月 7 日",
+        "完整列出 PEP 594 在 3.13 移除的全部 19 个模块（aifc, audioop, cgi, cgitb, chunk, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib），不多不少",
+        "答案中出现的每个 URL 都真实可打开（用 check_links.py 检测为 OK/OK_REDIRECTED，且不是软404）",
+        "发布日期和模块列表这两个关键事实各自紧跟来源标注",
+        "来源列表标注了访问时间或页面发布时间",
+        "可信度或证据强度有说明依据（例如一手/官方、独立来源数），而不只是一个'高/中/低'标签或完全没有"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "audit-existing-answer-with-bad-citations",
+      "prompt": "这是我让另一个 AI 写的一段关于 Python 3.13 的介绍（文件 python313_answer.md），里面带了 6 个引用链接。帮我检查一下这些网址能不能打开、引用的内容是不是真的支持它说的话，哪些说法有问题，给我一份检查报告。",
+      "expected_output": "审计报告：[1][2][3][4] 可打开；[5][6] 是不存在的 URL（404）。逐条判定：发布日期(支持)、自由线程(支持)、JIT 存在(支持)、'JIT 提速 2–3 倍'(不支持，PEP 744 未作此声明)、19 个模块(支持)、新 REPL 源自 PyPy(内容基本属实但所附链接不存在，应改引 whatsnew/3.13)、'asyncio 默认事件循环改为 uvloop'(不支持/编造，无来源)。给出修正建议。",
+      "files": [
+        "python313_answer.md"
+      ],
+      "assertions": [
+        "指出链接 [5] (docs.python.org/3/whatsnew/3.13/repl-improvements.html) 无法打开/不存在",
+        "指出链接 [6] (docs.python.org/3/library/asyncio-uvloop.html) 无法打开/不存在",
+        "判定'JIT 使大多数工作负载提速 2–3 倍'不被 PEP 744 支持",
+        "判定'asyncio 默认事件循环改为 uvloop'为不实/无依据",
+        "确认 [1]–[4] 可打开，且发布日期、自由线程、移除 19 个模块这三条说法得到来源支持",
+        "对'新 REPL 源自 PyPy'一条区分了'说法本身基本属实'与'所附链接不存在'，并给出可替代的正确来源",
+        "报告给出了具体修正建议（改写句子/替换链接/删除），而不只是列问题"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "research-with-screenshot-evidence",
+      "prompt": "arXiv 上 'Attention Is All You Need' 这篇论文的摘要里，WMT 2014 英德和英法翻译任务的 BLEU 分别报告为多少？我要截图证据，把截图存到当前目录下。",
+      "expected_output": "回答 28.4（英德）和 41.8（英法），附 arXiv 页面链接（https://arxiv.org/abs/1706.03762），并保存一张能看清摘要相关句子的截图文件（PNG），说明截图位置；来源标注访问时间。",
+      "files": [],
+      "assertions": [
+        "答案给出英德 28.4 BLEU 和英法 41.8 BLEU",
+        "输出目录下存在至少一个 PNG 截图文件",
+        "截图能清晰读到摘要中包含 28.4 和 41.8 的那句话（打开图片查看，字迹可辨认）",
+        "答案中写明了截图文件的路径/文件名和抓取时间",
+        "答案给出 https://arxiv.org/abs/1706.03762（或等价 arXiv 链接）且该链接可打开"
+      ]
+    }
+  ]
+}

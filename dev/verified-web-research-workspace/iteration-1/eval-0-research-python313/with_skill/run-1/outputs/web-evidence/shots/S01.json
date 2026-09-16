@@ -1,0 +1,29 @@
+{
+  "backend": "playwright",
+  "files": [
+    "web-evidence/shots\\S01.png"
+  ],
+  "final_url": "https://www.python.org/downloads/release/python-3130/",
+  "title": "Python Release Python 3.13.0 | Python.org",
+  "viewport": {
+    "width": 1280,
+    "height": 900,
+    "scale": 2.0
+  },
+  "text_file": "web-evidence/shots\\S01.txt",
+  "text_chars": 5550,
+  "find_text": {
+    "found": true,
+    "region": {
+      "x": 0,
+      "y": 0,
+      "width": 1520,
+      "height": 1800
+    },
+    "matched_text": "Skip to content\nPython\nPSF\nDocs\nPyPI\nJobs\nCommunity\nDonate\n \nSearch This Site\n GO\nSocialize\nAbout\n \nDownloads\n \nDocumentation\n \nCommunity\n \nSuccess Stories\n \nNews\n \nEvents\nPython 3.13.0\nNote: Python 3.13.0 has been superseded by Python 3.13.15.\n\nRelease date: Oct. 7, 2024\n\nThis is the stable release"
+  },
+  "ok": true,
+  "url": "https://www.python.org/downloads/release/python-3130/",
+  "captured_at": "2026-09-16T18:05:50+00:00",
+  "full_page": false
+}

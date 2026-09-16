@@ -1,0 +1,50 @@
+{
+  "eval_id": 1,
+  "eval_name": "audit-existing-answer-with-bad-citations",
+  "run": "without_skill",
+  "expectations": [
+    {
+      "text": "指出链接 [5] (docs.python.org/3/whatsnew/3.13/repl-improvements.html) 无法打开/不存在",
+      "passed": true,
+      "evidence": "[5] 标 404 不存在"
+    },
+    {
+      "text": "指出链接 [6] (docs.python.org/3/library/asyncio-uvloop.html) 无法打开/不存在",
+      "passed": true,
+      "evidence": "[6] 标 404 不存在"
+    },
+    {
+      "text": "判定'JIT 使大多数工作负载提速 2–3 倍'不被 PEP 744 支持",
+      "passed": true,
+      "evidence": "[3] 判'提速 2–3 倍是捏造'，引 PEP 744 原句"
+    },
+    {
+      "text": "判定'asyncio 默认事件循环改为 uvloop'为不实/无依据",
+      "passed": true,
+      "evidence": "[6] 判'说法虚假'，引 asyncio 文档"
+    },
+    {
+      "text": "确认 [1]–[4] 可打开，且发布日期、自由线程、移除 19 个模块这三条说法得到来源支持",
+      "passed": true,
+      "evidence": "[1][2][4] 200 且判定正确"
+    },
+    {
+      "text": "对'新 REPL 源自 PyPy'一条区分了'说法本身基本属实'与'所附链接不存在'，并给出可替代的正确来源",
+      "passed": true,
+      "evidence": "[5] '说法准确，引用无效'，给出 #a-better-interactive-interpreter 替代"
+    },
+    {
+      "text": "报告给出了具体修正建议（改写句子/替换链接/删除），而不只是列问题",
+      "passed": true,
+      "evidence": "第四节给出可直接替换的修订文本"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  }
+}

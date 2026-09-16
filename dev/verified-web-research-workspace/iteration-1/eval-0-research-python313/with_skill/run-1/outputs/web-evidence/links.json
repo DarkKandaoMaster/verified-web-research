@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-09-16T18:04:09+00:00",
+  "summary": {
+    "OK": 7
+  },
+  "results": [
+    {
+      "url": "https://www.python.org/downloads/release/python-3130/",
+      "final_url": "https://www.python.org/downloads/release/python-3130/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "Python Release Python 3.13.0 | Python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.15,
+      "text_chars_sampled": 6634
+    },
+    {
+      "url": "https://blog.python.org/2024/10/python-3130-final-released/",
+      "final_url": "https://blog.python.org/2024/10/python-3130-final-released/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "Python 3.13.0 (final) released | Python Insider",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.19,
+      "text_chars_sampled": 4890
+    },
+    {
+      "url": "https://docs.python.org/3/whatsnew/3.13.html",
+      "final_url": "https://docs.python.org/3/whatsnew/3.13.html",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "What’s New In Python 3.13 — Python 3.14.7 documentation",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.32,
+      "text_chars_sampled": 115545
+    },
+    {
+      "url": "https://peps.python.org/pep-0594/",
+      "final_url": "https://peps.python.org/pep-0594/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "PEP 594 – Removing dead batteries from the standard library | peps.python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.19,
+      "text_chars_sampled": 23849
+    },
+    {
+      "url": "https://discuss.python.org/t/pep-594-has-been-implemented-python-3-13-removes-20-stdlib-modules/27124",
+      "final_url": "https://discuss.python.org/t/pep-594-has-been-implemented-python-3-13-removes-20-stdlib-modules/27124",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "PEP 594 has been implemented: Python 3.13 removes 20 stdlib modules - Core Development - Discussions on Python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.63,
+      "text_chars_sampled": 308
+    },
+    {
+      "url": "https://github.com/python/cpython/issues/104773",
+      "final_url": "https://github.com/python/cpython/issues/104773",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "PEP 594: Remove stdlib modules scheduled for deletion in Python 3.13 · Issue #104773 · python/cpython · GitHub",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.82,
+      "text_chars_sampled": 5139
+    },
+    {
+      "url": "https://peps.python.org/pep-0719/",
+      "final_url": "https://peps.python.org/pep-0719/",
+      "status": "OK",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirects": 0,
+      "method": "GET",
+      "title": "PEP 719 – Python 3.13 Release Schedule | peps.python.org",
+      "notes": [],
+      "checked_at": "2026-09-16T18:04:05+00:00",
+      "elapsed_s": 3.18,
+      "text_chars_sampled": 3074
+    }
+  ]
+}

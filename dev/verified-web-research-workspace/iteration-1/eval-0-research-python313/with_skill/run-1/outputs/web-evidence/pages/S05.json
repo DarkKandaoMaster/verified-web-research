@@ -1,0 +1,34 @@
+{
+  "id": "S05",
+  "url": "https://discuss.python.org/t/pep-594-has-been-implemented-python-3-13-removes-20-stdlib-modules/27124",
+  "final_url": "https://discuss.python.org/t/pep-594-has-been-implemented-python-3-13-removes-20-stdlib-modules/27124",
+  "fetched_at": "2026-09-16T18:04:38+00:00",
+  "method": "browser",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "PEP 594 has been implemented: Python 3.13 removes 20 stdlib modules - Core Development - Discussions on Python.org",
+  "published": "2023-05-26T14:39:32+00:00",
+  "published_from": "article:published_time",
+  "canonical": "https://discuss.python.org/t/pep-594-has-been-implemented-python-3-13-removes-20-stdlib-modules/27124",
+  "lang": "en",
+  "error": null,
+  "description": "Hi, \nZachary Ware and me removed 19 modules in Python 3.13 stdlib, modules deprecated in Python 3.11 by PEP 594 – Removing dead batteries from the standard library. \n\naifc\naudioop\ncgi\ncgitb\nchunk\ncrypt\nimghdr\nmailcap\nmsi…",
+  "links_in_content": 41,
+  "text_chars": 5656,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 5656,
+  "find": {
+    "removes 20 stdlib modules": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    }
+  },
+  "page_file": "web-evidence\\pages\\S05.md"
+}

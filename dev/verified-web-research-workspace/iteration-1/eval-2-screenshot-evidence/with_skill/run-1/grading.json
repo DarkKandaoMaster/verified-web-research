@@ -1,0 +1,40 @@
+{
+  "eval_id": 2,
+  "eval_name": "research-with-screenshot-evidence",
+  "run": "with_skill",
+  "expectations": [
+    {
+      "text": "答案给出英德 28.4 BLEU 和英法 41.8 BLEU",
+      "passed": true,
+      "evidence": "结论给出 28.4 与 41.8"
+    },
+    {
+      "text": "输出目录下存在至少一个 PNG 截图文件",
+      "passed": true,
+      "evidence": "outputs 下有 2 个 PNG"
+    },
+    {
+      "text": "截图能清晰读到摘要中包含 28.4 和 41.8 的那句话（打开图片查看，字迹可辨认）",
+      "passed": true,
+      "evidence": "查看 v7 截图：摘要整段红框，28.4 / 41.8 清晰可读（2 倍缩放）"
+    },
+    {
+      "text": "答案中写明了截图文件的路径/文件名和抓取时间",
+      "passed": true,
+      "evidence": "列出两个文件名并写明截图时间 2026-09-16 18:04–18:05 UTC"
+    },
+    {
+      "text": "答案给出 https://arxiv.org/abs/1706.03762（或等价 arXiv 链接）且该链接可打开",
+      "passed": true,
+      "evidence": "给出 https://arxiv.org/abs/1706.03762，check_links OK"
+    }
+  ],
+  "passed": 5,
+  "total": 5,
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

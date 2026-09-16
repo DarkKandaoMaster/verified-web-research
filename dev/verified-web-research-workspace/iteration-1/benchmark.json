@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "skill_name": "verified-web-research",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-16T18:14:11Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 497.2,
+        "tokens": 91582,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "答案给出的正式发布日期是 2024 年 10 月 7 日",
+          "passed": true,
+          "evidence": "答案写明 2024 年 10 月 7 日（周一）"
+        },
+        {
+          "text": "完整列出 PEP 594 在 3.13 移除的全部 19 个模块（aifc, audioop, cgi, cgitb, chunk, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib），不多不少",
+          "passed": true,
+          "evidence": "脚本核对：19 个模块全部出现，无缺漏"
+        },
+        {
+          "text": "答案中出现的每个 URL 都真实可打开（用 check_links.py 检测为 OK/OK_REDIRECTED，且不是软404）",
+          "passed": true,
+          "evidence": "check_links 检测 7 个 URL 全部 OK"
+        },
+        {
+          "text": "发布日期和模块列表这两个关键事实各自紧跟来源标注",
+          "passed": true,
+          "evidence": "发布日期后跟 [S01][S03][S07]，模块列表后跟 [S03][S04][S05][S06]"
+        },
+        {
+          "text": "来源列表标注了访问时间或页面发布时间",
+          "passed": true,
+          "evidence": "来源表每条含发布时间（或未知）与访问时间 2026-09-16"
+        },
+        {
+          "text": "可信度或证据强度有说明依据（例如一手/官方、独立来源数），而不只是一个'高/中/低'标签或完全没有",
+          "passed": true,
+          "evidence": "每条论断括号内写明依据：一手直述、独立证据路径数、as of 日期"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 274.7,
+        "tokens": 77984,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "指出链接 [5] (docs.python.org/3/whatsnew/3.13/repl-improvements.html) 无法打开/不存在",
+          "passed": true,
+          "evidence": "表格标 [5] GONE (404)，Wayback 无快照"
+        },
+        {
+          "text": "指出链接 [6] (docs.python.org/3/library/asyncio-uvloop.html) 无法打开/不存在",
+          "passed": true,
+          "evidence": "表格标 [6] GONE (404)，Wayback 无快照"
+        },
+        {
+          "text": "判定'JIT 使大多数工作负载提速 2–3 倍'不被 PEP 744 支持",
+          "passed": true,
+          "evidence": "C04 判定'不支持（页面说法相反）'，引 PEP 744 原句"
+        },
+        {
+          "text": "判定'asyncio 默认事件循环改为 uvloop'为不实/无依据",
+          "passed": true,
+          "evidence": "C07 判定'不支持'，引 asyncio 官方文档说明默认循环"
+        },
+        {
+          "text": "确认 [1]–[4] 可打开，且发布日期、自由线程、移除 19 个模块这三条说法得到来源支持",
+          "passed": true,
+          "evidence": "[1]-[4] OK，C01/C02/C05 判定支持或部分支持（19 出自 What's New）"
+        },
+        {
+          "text": "对'新 REPL 源自 PyPy'一条区分了'说法本身基本属实'与'所附链接不存在'，并给出可替代的正确来源",
+          "passed": true,
+          "evidence": "C06 判定'无法核验（链接不存在）；说法本身成立'，给出 #a-better-interactive-interpreter 替代链接"
+        },
+        {
+          "text": "报告给出了具体修正建议（改写句子/替换链接/删除），而不只是列问题",
+          "passed": true,
+          "evidence": "第 3 节逐条给出改写/替换/删除建议"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 181.7,
+        "tokens": 67762,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "答案给出英德 28.4 BLEU 和英法 41.8 BLEU",
+          "passed": true,
+          "evidence": "结论给出 28.4 与 41.8"
+        },
+        {
+          "text": "输出目录下存在至少一个 PNG 截图文件",
+          "passed": true,
+          "evidence": "outputs 下有 2 个 PNG"
+        },
+        {
+          "text": "截图能清晰读到摘要中包含 28.4 和 41.8 的那句话（打开图片查看，字迹可辨认）",
+          "passed": true,
+          "evidence": "查看 v7 截图：摘要整段红框，28.4 / 41.8 清晰可读（2 倍缩放）"
+        },
+        {
+          "text": "答案中写明了截图文件的路径/文件名和抓取时间",
+          "passed": true,
+          "evidence": "列出两个文件名并写明截图时间 2026-09-16 18:04–18:05 UTC"
+        },
+        {
+          "text": "答案给出 https://arxiv.org/abs/1706.03762（或等价 arXiv 链接）且该链接可打开",
+          "passed": true,
+          "evidence": "给出 https://arxiv.org/abs/1706.03762，check_links OK"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.67,
+        "passed": 4,
+        "failed": 2,
+        "total": 6,
+        "time_seconds": 84.5,
+        "tokens": 35991,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "答案给出的正式发布日期是 2024 年 10 月 7 日",
+          "passed": true,
+          "evidence": "答案写明 2024 年 10 月 7 日"
+        },
+        {
+          "text": "完整列出 PEP 594 在 3.13 移除的全部 19 个模块（aifc, audioop, cgi, cgitb, chunk, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib），不多不少",
+          "passed": true,
+          "evidence": "脚本核对：19 个模块全部出现"
+        },
+        {
+          "text": "答案中出现的每个 URL 都真实可打开（用 check_links.py 检测为 OK/OK_REDIRECTED，且不是软404）",
+          "passed": true,
+          "evidence": "check_links 检测 7 个 URL 全部 OK"
+        },
+        {
+          "text": "发布日期和模块列表这两个关键事实各自紧跟来源标注",
+          "passed": true,
+          "evidence": "每个事实下方紧跟来源 URL"
+        },
+        {
+          "text": "来源列表标注了访问时间或页面发布时间",
+          "passed": false,
+          "evidence": "来源汇总只有标题和 URL，没有访问时间或发布时间"
+        },
+        {
+          "text": "可信度或证据强度有说明依据（例如一手/官方、独立来源数），而不只是一个'高/中/低'标签或完全没有",
+          "passed": false,
+          "evidence": "没有任何可信度说明或证据强度依据"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 191.9,
+        "tokens": 47062,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "指出链接 [5] (docs.python.org/3/whatsnew/3.13/repl-improvements.html) 无法打开/不存在",
+          "passed": true,
+          "evidence": "[5] 标 404 不存在"
+        },
+        {
+          "text": "指出链接 [6] (docs.python.org/3/library/asyncio-uvloop.html) 无法打开/不存在",
+          "passed": true,
+          "evidence": "[6] 标 404 不存在"
+        },
+        {
+          "text": "判定'JIT 使大多数工作负载提速 2–3 倍'不被 PEP 744 支持",
+          "passed": true,
+          "evidence": "[3] 判'提速 2–3 倍是捏造'，引 PEP 744 原句"
+        },
+        {
+          "text": "判定'asyncio 默认事件循环改为 uvloop'为不实/无依据",
+          "passed": true,
+          "evidence": "[6] 判'说法虚假'，引 asyncio 文档"
+        },
+        {
+          "text": "确认 [1]–[4] 可打开，且发布日期、自由线程、移除 19 个模块这三条说法得到来源支持",
+          "passed": true,
+          "evidence": "[1][2][4] 200 且判定正确"
+        },
+        {
+          "text": "对'新 REPL 源自 PyPy'一条区分了'说法本身基本属实'与'所附链接不存在'，并给出可替代的正确来源",
+          "passed": true,
+          "evidence": "[5] '说法准确，引用无效'，给出 #a-better-interactive-interpreter 替代"
+        },
+        {
+          "text": "报告给出了具体修正建议（改写句子/替换链接/删除），而不只是列问题",
+          "passed": true,
+          "evidence": "第四节给出可直接替换的修订文本"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 55.4,
+        "tokens": 35390,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "答案给出英德 28.4 BLEU 和英法 41.8 BLEU",
+          "passed": true,
+          "evidence": "表格给出 28.4 与 41.8"
+        },
+        {
+          "text": "输出目录下存在至少一个 PNG 截图文件",
+          "passed": true,
+          "evidence": "outputs 下有 3 个 PNG"
+        },
+        {
+          "text": "截图能清晰读到摘要中包含 28.4 和 41.8 的那句话（打开图片查看，字迹可辨认）",
+          "passed": true,
+          "evidence": "查看 highlighted 截图：两处数字黄色高亮，清晰可读"
+        },
+        {
+          "text": "答案中写明了截图文件的路径/文件名和抓取时间",
+          "passed": true,
+          "evidence": "列出三个文件名；访问日期 2026-09-17"
+        },
+        {
+          "text": "答案给出 https://arxiv.org/abs/1706.03762（或等价 arXiv 链接）且该链接可打开",
+          "passed": true,
+          "evidence": "给出 https://arxiv.org/abs/1706.03762，check_links OK"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 317.8667,
+        "stddev": 162.119,
+        "min": 181.7,
+        "max": 497.2
+      },
+      "tokens": {
+        "mean": 79109.3333,
+        "stddev": 11949.8067,
+        "min": 67762,
+        "max": 91582
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.89,
+        "stddev": 0.1905,
+        "min": 0.67,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 110.6,
+        "stddev": 71.8955,
+        "min": 55.4,
+        "max": 191.9
+      },
+      "tokens": {
+        "mean": 39481.0,
+        "stddev": 6572.212,
+        "min": 35390,
+        "max": 47062
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.11",
+      "time_seconds": "+207.3",
+      "tokens": "+39628"
+    }
+  },
+  "notes": [
+    "三个测试里，无技能基线的表现都很强（本模型有 WebFetch，会主动打开链接核对）。技能的增量主要体现在 eval-0：来源表带访问/发布时间、每条论断有可信度依据——这两条基线没做到；其余断言两边都通过，属于'非区分性'断言。",
+    "eval-1（审计）两边 7/7 全过：基线自己就发现了 2 个编造 URL 和 2 条错误说法。技能版多给了 'Wayback 从未收录' 这一信号和证据目录，但检出率没有差异——这个测试对当前模型太容易，下一轮应换更隐蔽的错误（如真页面+过度解读、转载被当独立来源、过期数据）。",
+    "eval-2（截图）两边都过；基线的高亮（黄色 <mark> 只标数字）比技能脚本的整段红框更精准，脚本应改为按文本节点包裹高亮。技能版额外发现 v1/v7 摘要 41.0→41.8 的差异，是真实增量。",
+    "成本：技能版平均耗时 318s、7.9 万 token，约为基线 3 倍/2 倍。eval-0 技能版用了 497s（7 个来源、截图超时重试），流程偏重；应考虑对简单问题减少必须步骤（例如无争议时不强制截图、import 步骤合并）。",
+    "子代理反馈的脚本缺陷（待修）：fetch_page --find 在小数点处切句造成 41.8 vs 41.0 误判为找到；短查询子串误命中；import-check 把 #fragment 写进 URL；screenshot 的 page.screenshot 未传 timeout 且失败后静默退到 CLI；--timeout 单位未写明；审计模式缺少 --cited/--verdict 字段导致 validate 必报 ERROR；单一权威一手来源的 high 警告噪音。"
+  ]
+}

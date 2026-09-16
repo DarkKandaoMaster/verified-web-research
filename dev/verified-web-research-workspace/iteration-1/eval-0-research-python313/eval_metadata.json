@@ -1,0 +1,25 @@
+{
+  "eval_id": 0,
+  "eval_name": "research-python313-removed-modules",
+  "prompt": "帮我查一下：Python 3.13 是哪天正式发布的？它按 PEP 594 移除了哪些标准库模块（要完整列表）？请给出带来源的回答，我要能自己点开核对。",
+  "assertions": [
+    {
+      "text": "答案给出的正式发布日期是 2024 年 10 月 7 日"
+    },
+    {
+      "text": "完整列出 PEP 594 在 3.13 移除的全部 19 个模块（aifc, audioop, cgi, cgitb, chunk, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib），不多不少"
+    },
+    {
+      "text": "答案中出现的每个 URL 都真实可打开（用 check_links.py 检测为 OK/OK_REDIRECTED，且不是软404）"
+    },
+    {
+      "text": "发布日期和模块列表这两个关键事实各自紧跟来源标注"
+    },
+    {
+      "text": "来源列表标注了访问时间或页面发布时间"
+    },
+    {
+      "text": "可信度或证据强度有说明依据（例如一手/官方、独立来源数），而不只是一个'高/中/低'标签或完全没有"
+    }
+  ]
+}

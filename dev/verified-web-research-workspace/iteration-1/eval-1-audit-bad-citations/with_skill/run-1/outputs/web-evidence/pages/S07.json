@@ -1,0 +1,48 @@
+{
+  "id": "S07",
+  "url": "https://docs.python.org/3.13/library/asyncio-eventloop.html",
+  "final_url": "https://docs.python.org/3.13/library/asyncio-eventloop.html",
+  "fetched_at": "2026-09-16T18:04:37+00:00",
+  "method": "http",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "Event loop — Python 3.13.15 documentation",
+  "published": null,
+  "published_from": null,
+  "canonical": "https://docs.python.org/3/library/asyncio-eventloop.html",
+  "lang": "en",
+  "error": null,
+  "description": "Source code: Lib/asyncio/events.py, Lib/asyncio/base_events.py Preface The event loop is the core of every asyncio application. Event loops run asynchronous tasks and callbacks, perform network IO ...",
+  "links_in_content": 474,
+  "text_chars": 58895,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 58895,
+  "find": {
+    "uvloop": {
+      "found": false,
+      "match_ratio": 0.0,
+      "missing": [
+        "uvloop"
+      ],
+      "note": "partial match; the parts under 'missing' were NOT found on the page"
+    },
+    "SelectorEventLoop": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    },
+    "ProactorEventLoop": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    }
+  },
+  "page_file": "web-evidence\\pages\\S07.md"
+}

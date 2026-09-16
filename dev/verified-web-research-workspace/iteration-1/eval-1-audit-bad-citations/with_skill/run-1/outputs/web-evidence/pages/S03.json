@@ -1,0 +1,48 @@
+{
+  "id": "S03",
+  "url": "https://peps.python.org/pep-0744/",
+  "final_url": "https://peps.python.org/pep-0744/",
+  "fetched_at": "2026-09-16T18:03:54+00:00",
+  "method": "http",
+  "http_status": 200,
+  "content_type": "text/html",
+  "title": "PEP 744 – JIT Compilation | peps.python.orgFollowing system colour schemeSelected dark colour schemeSelected light colour scheme",
+  "published": null,
+  "published_from": null,
+  "canonical": "https://peps.python.org/pep-0744/",
+  "lang": "en",
+  "error": null,
+  "description": "Earlier this year, an experimental “just-in-time” compiler was merged into CPython’s main development branch. While recent CPython releases have included other substantial internal changes, this addition represents a particularly significant departure f...",
+  "links_in_content": 86,
+  "text_chars": 25541,
+  "looks_like_blocked": false,
+  "looks_like_login_wall": false,
+  "looks_like_js_shell": false,
+  "looks_like_error_page": false,
+  "thin_content": false,
+  "truncated": false,
+  "full_text_chars": 25541,
+  "find": {
+    "experimental": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    },
+    "2-3x": {
+      "found": false,
+      "match_ratio": 0.0,
+      "missing": [
+        "2-3x"
+      ],
+      "note": "partial match; the parts under 'missing' were NOT found on the page"
+    },
+    "faster": {
+      "found": true,
+      "match_ratio": 1.0,
+      "missing": [],
+      "note": "exact (normalized) match"
+    }
+  },
+  "page_file": "web-evidence\\pages\\S03.md"
+}

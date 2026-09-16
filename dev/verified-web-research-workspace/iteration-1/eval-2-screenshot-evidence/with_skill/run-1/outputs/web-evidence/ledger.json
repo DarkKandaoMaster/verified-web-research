@@ -1,0 +1,106 @@
+{
+  "question": "arXiv 上 'Attention Is All You Need' 摘要中报告的 WMT 2014 英德、英法 BLEU 分数各是多少（需截图证据）",
+  "cutoff": "2026-09-17",
+  "created_at": "2026-09-16T18:03:48+00:00",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "title": "[1706.03762] Attention Is All You Need (arXiv abs, latest version)",
+      "how": "search",
+      "status": "OK",
+      "page": "pages\\S01.md",
+      "shot": "shots/S01.png",
+      "read": "both",
+      "published": "2017/06/12",
+      "accessed": "2026-09-16T18:04:07+00:00",
+      "group": "arxiv-paper",
+      "kind": "primary",
+      "note": "当前版本 v7（2023-08-02 修订）；截图清晰可读，摘要整段高亮",
+      "http_status": 200,
+      "checked_at": "2026-09-16T18:04:08+00:00",
+      "fetch_warnings": [],
+      "text_chars": 4601,
+      "shot_text": "shots/S01.txt"
+    },
+    {
+      "id": "S02",
+      "url": "https://arxiv.org/abs/1706.03762v1",
+      "final_url": "https://arxiv.org/abs/1706.03762v1",
+      "title": "[1706.03762v1] Attention Is All You Need (arXiv abs, v1)",
+      "how": "search",
+      "status": "OK",
+      "page": "pages\\S02.md",
+      "shot": "shots/S02.png",
+      "read": "both",
+      "published": "2017/06/12",
+      "accessed": "2026-09-16T18:04:08+00:00",
+      "group": "arxiv-paper",
+      "kind": "primary",
+      "note": "v1（2017-06-12）；英法 BLEU 写的是 41.0",
+      "http_status": 200,
+      "checked_at": "2026-09-16T18:04:08+00:00",
+      "fetch_warnings": [],
+      "text_chars": 4603,
+      "shot_text": "shots/S02.txt"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "text": "arXiv 当前版本（v7）摘要报告 WMT 2014 英德翻译 BLEU 为 28.4，比已有最好结果（含集成模型）高出 2 BLEU 以上",
+      "support": [
+        "S01",
+        "S02"
+      ],
+      "contra": [],
+      "quote": "Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU.",
+      "quote_from": "S01",
+      "quote_verified": true,
+      "confidence": "high",
+      "basis": "原始论文 arXiv 页面直述（一手）；正文抓取与截图均核对；v1 与 v7 摘要该数字一致；问题问的就是 arXiv 摘要写了什么，唯一权威来源即可",
+      "as_of": "2026-09-17",
+      "note": null,
+      "added_at": "2026-09-16T18:05:34+00:00",
+      "quote_check": "quote found in fetched text"
+    },
+    {
+      "id": "C02",
+      "text": "arXiv 当前版本（v7）摘要报告 WMT 2014 英法翻译单模型 BLEU 为 41.8（8 块 GPU 训练 3.5 天）",
+      "support": [
+        "S01"
+      ],
+      "contra": [],
+      "quote": "On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs",
+      "quote_from": "S01",
+      "quote_verified": true,
+      "confidence": "high",
+      "basis": "原始论文 arXiv 页面直述（一手）；正文抓取与截图均核对；问题问的就是 arXiv 摘要写了什么，唯一权威来源即可",
+      "as_of": "2026-09-17",
+      "note": null,
+      "added_at": "2026-09-16T18:05:34+00:00",
+      "quote_check": "quote found in fetched text"
+    },
+    {
+      "id": "C03",
+      "text": "arXiv v1（2017-06-12）摘要中英法翻译 BLEU 写的是 41.0，后续版本改为 41.8；英德 28.4 未变",
+      "support": [
+        "S02",
+        "S01"
+      ],
+      "contra": [],
+      "quote": "our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs",
+      "quote_from": "S02",
+      "quote_verified": true,
+      "confidence": "high",
+      "basis": "v1 与 v7 页面均已抓取并截图，两处原文直接对比；一手来源",
+      "as_of": "2026-09-17",
+      "note": null,
+      "added_at": "2026-09-16T18:05:34+00:00",
+      "quote_check": "quote found in fetched text"
+    }
+  ],
+  "notes": [],
+  "updated_at": "2026-09-16T18:05:34+00:00"
+}

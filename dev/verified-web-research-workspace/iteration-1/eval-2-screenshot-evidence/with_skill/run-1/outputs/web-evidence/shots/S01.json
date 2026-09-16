@@ -1,0 +1,29 @@
+{
+  "backend": "playwright",
+  "files": [
+    "D:/Release/想法/搜索skill/verified-web-research-workspace/iteration-1/eval-2-screenshot-evidence/with_skill/outputs/web-evidence/shots\\S01.png"
+  ],
+  "final_url": "https://arxiv.org/abs/1706.03762",
+  "title": "[1706.03762] Attention Is All You Need",
+  "viewport": {
+    "width": 1280,
+    "height": 900,
+    "scale": 2.0
+  },
+  "text_file": "D:/Release/想法/搜索skill/verified-web-research-workspace/iteration-1/eval-2-screenshot-evidence/with_skill/outputs/web-evidence/shots\\S01.txt",
+  "text_chars": 3166,
+  "find_text": {
+    "found": true,
+    "region": {
+      "x": 0,
+      "y": 0,
+      "width": 1460.7916870117188,
+      "height": 688.6666717529297
+    },
+    "matched_text": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer"
+  },
+  "ok": true,
+  "url": "https://arxiv.org/abs/1706.03762",
+  "captured_at": "2026-09-16T18:04:46+00:00",
+  "full_page": false
+}
